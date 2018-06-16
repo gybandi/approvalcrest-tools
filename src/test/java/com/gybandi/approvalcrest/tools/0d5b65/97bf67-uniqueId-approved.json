@@ -1,0 +1,39 @@
+/*com.gybandi.approvalcrest_tools.ApprovalcrestMojoTest.testWithValidJson2*/
+[
+  {
+    "id": 1,
+    "name": "dummyPojo",
+    "integerProperty": 2,
+    "booleanProperty": true
+  },
+  {
+    "id": 2,
+    "name": "dummyPojo2",
+    "integerProperty": 3,
+    "booleanProperty": false,
+    "parent": {
+      "id": 1,
+      "name": "dummyPojo",
+      "integerProperty": 2,
+      "booleanProperty": true
+    }
+  },
+  {
+    "id": 3,
+    "name": "dummyPojo3",
+    "integerProperty": 4,
+    "booleanProperty": false,
+    "parent": {
+      "id": 2,
+      "name": "dummyPojo2",
+      "integerProperty": 3,
+      "booleanProperty": false,
+      "parent": {
+        "id": 1,
+        "name": "dummyPojo",
+        "integerProperty": 2,
+        "booleanProperty": true
+      }
+    }
+  }
+]
